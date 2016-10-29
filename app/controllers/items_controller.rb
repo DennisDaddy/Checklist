@@ -6,6 +6,7 @@ class ItemsController < ApplicationController
 	end
 
 	def show
+
 		
 	end
 
@@ -29,5 +30,9 @@ class ItemsController < ApplicationController
 	def item_params
 		params.require(:item).permit(:title, :description)
 		
+	end
+
+	def find_items
+		@item = Item.find(params[:id])
 	end
 end
