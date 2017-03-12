@@ -9,6 +9,7 @@ gem 'mini_magick'
 gem  'devise'
 gem 'paperclip'
 gem 'masonry-rails'
+gem 'simple_form'
 
 
 gem 'will_paginate'
