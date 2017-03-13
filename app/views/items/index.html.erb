@@ -16,7 +16,7 @@
 
    <h2><%= link_to item.title, item %></h2>
 
-  <p>Completed <%= time_ago_in_words(item.created_at) %> ago</p>
+  <b>Completed <%= time_ago_in_words(item.created_at) %> ago</b>
 
   <p><%= item.description %></p>
   <%= link_to "Mark As Complete", complete_item_path(item), method: :patch %>
