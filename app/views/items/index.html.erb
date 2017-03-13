@@ -1,3 +1,5 @@
+
+<% if user_signed_in? %>
 <% @items.each do |item| %>
 
  <h2><%= link_to item.title, item %></h2>
@@ -5,5 +7,7 @@
   <p><%= item.description %></p>
 
 <% end %>
+ 
+ <%= render 'static_landing_page' %>
 
-<%= link_to "New Item", new_item_path %>
+<% end %>
